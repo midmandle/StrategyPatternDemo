@@ -1,3 +1,3 @@
 public interface Speciality {
-    String doCast();
+    String doCast(Wizard wizard);
 }

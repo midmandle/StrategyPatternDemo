@@ -20,4 +20,11 @@ public class WizardsShould {
         Wizard wizard = new Wizard(new ArcaneSpeciality());
         assertEquals("Casts arcane blast!", wizard.castSpell());
     }
+
+    @Test
+    public void ice_spells_cost_10_mana() {
+        Wizard iceWizard = new Wizard(new IceSpeciality());
+        iceWizard.castSpell();
+        assertEquals(90, iceWizard.getManaLevel());
+    }
 }

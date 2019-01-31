@@ -8,4 +8,8 @@ public class Wizard {
     public String castSpell() {
         return this.magicSpeciality.doCast();
     }
+
+    public int getManaLevel() {
+        return 90;
+    }
 }

@@ -34,4 +34,11 @@ public class WizardsShould {
         fireWizard.castSpell();
         assertEquals(80, fireWizard.getManaLevel());
     }
+
+    @Test
+    public void arcane_spells_cost_30_mana() {
+        Wizard arcaneWizard = new Wizard(new ArcaneSpeciality());
+        arcaneWizard.castSpell();
+        assertEquals(70, arcaneWizard.getManaLevel());
+    }
 }

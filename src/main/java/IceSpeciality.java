@@ -1,5 +1,5 @@
 public class IceSpeciality implements Speciality {
-    public String doCast(Wizard wizard) {
+    public String doCast(MagicUser wizard) {
         wizard.reduceManaLevel(10);
         return "Casts ice blast!";
     }
